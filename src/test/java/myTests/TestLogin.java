@@ -21,8 +21,9 @@ public class TestLogin extends AbstractTest {
         homePg.open();
         LoginPg loginPg = homePg.clickInternetTickets();
 //        assertTrue(loginPg.isLoginButtonPresent(), "Login Button Is Not Present");
-        loginPg.enterUserPassword("lala");
         loginPg.enterUserName("maria");
+        loginPg.enterUserPassword("lala");
+
 
         loginPg.clickLogintBtn();
 //        assertTrue(loginPg.isLoginButtonPresent(), "Login Button Is Not Present");
