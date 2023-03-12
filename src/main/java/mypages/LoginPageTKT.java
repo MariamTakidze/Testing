@@ -25,8 +25,8 @@ public class LoginPageTKT extends AbstractPage {
 
     }
 
-    public void enterUserEmail(String userName) {
-        userEmailInput.type(userName);
+    public void enterUserEmail(String userEmail) {
+        userEmailInput.type(userEmail);
     }
 
     public void enterUserPassword(String userPassword) {
