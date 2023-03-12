@@ -16,6 +16,12 @@ public class LoginPageTKT extends AbstractPage {
     @FindBy(xpath = "//button[text()='Login']")
     private ExtendedWebElement loginBtn;
 
+    //restore btn
+    @FindBy(xpath = "//span[text()='Restore']")
+    private ExtendedWebElement restoreBtn;
+
+
+
     public LoginPageTKT(WebDriver driver) {
         super(driver);
     }
@@ -23,6 +29,11 @@ public class LoginPageTKT extends AbstractPage {
     public boolean isLoginButtonPresent() {
         return loginBtn.isElementPresent();
 
+    }
+
+    public PasswordReset clickRestoreBtn(){
+        restoreBtn.click();
+        return new PasswordReset(getDriver());
     }
 
     public void enterUserEmail(String userEmail) {
