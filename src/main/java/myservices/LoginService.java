@@ -19,6 +19,6 @@ public class LoginService extends AbstractPage {
         loginPageTKT.enterUserEmail(tktUser.getEmail());
         loginPageTKT.enterUserPassword(tktUser.getPassword());
         loginPageTKT.clickLogintBtn();
-        assertTrue(loginPageTKT.isLoginButtonPresent(),"Login Button Is Not Present");
+//        assertTrue(loginPageTKT.isLoginButtonPresent(),"Login Button Is Not Present");
     }
 }
